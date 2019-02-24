@@ -1,0 +1,259 @@
+2019-02-23 10:51:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HENKILO" not found; SQL statement:
+INSERT INTO Henkilo (nimi) VALUES (?) [42102-197]
+2019-02-23 11:16:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HENKILO" not found; SQL statement:
+INSERT INTO Henkilo (nimi) VALUES (?) [42102-197]
+2019-02-23 11:19:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HENKILO" not found; SQL statement:
+SELECT nimi FROM Henkilo; [42102-197]
+2019-02-23 11:19:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HENKILO" not found; SQL statement:
+SELECT nimi FROM Henkilo; [42102-197]
+2019-02-23 11:35:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255),päivähinta numeric(5,2),PRIMARY KEY (huonenumero)); [42101-197]
+2019-02-23 11:35:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONE" not found; SQL statement:
+SELECT huonenumero FROM Huone; [42102-197]
+2019-02-23 11:35:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255),päivähinta numeric(5,2),PRIMARY KEY (huonenumero)); [42101-197]
+2019-02-23 11:35:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255),päivähinta numeric(5,2),PRIMARY KEY (huonenumero)); [42101-197]
+2019-02-23 11:36:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255),päivähinta numeric(5,2)); [42101-197]
+2019-02-23 11:37:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255)); [42101-197]
+2019-02-23 11:37:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255)); [42101-197]
+2019-02-23 11:38:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HUONEET" already exists; SQL statement:
+CREATE TABLE Huoneet(huonenumero integer, tyyppi varchar(255)); [42101-197]
+2019-02-23 11:48:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Invalid value "123" for parameter "columnIndex" [90008-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:240)
+	at org.h2.jdbc.JdbcResultSet.checkColumnIndex(JdbcResultSet.java:3191)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3230)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:292)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java)
+	at varausjarjestelma.VarausjarjestelmaSovellus.lambda$run$1(VarausjarjestelmaSovellus.java:48)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:440)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:46)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 11:58:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "huonenumero" not found [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3174)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3247)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:310)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java)
+	at varausjarjestelma.VarausjarjestelmaSovellus.lambda$run$0(VarausjarjestelmaSovellus.java:43)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:440)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:17:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:65)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:20:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:73)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:20:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "ASIAKAS" not found; SQL statement:
+INSERT INTO Asiakas (nimi, puhnro, email) VALUES (?,?, ?) [42102-197]
+2019-02-23 16:21:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:73)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:21:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "ASIAKAS" not found; SQL statement:
+INSERT INTO Asiakas (nimi, puhnro, email) VALUES (?,?, ?) [42102-197]
+2019-02-23 16:22:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:73)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:22:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "ASIAKAAT" not found; SQL statement:
+INSERT INTO Asiakaat (nimi, puhnro, email) VALUES (?,?, ?) [42102-197]
+2019-02-23 16:22:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:73)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:22:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:73)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
+2019-02-23 16:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ID" not found; SQL statement:
+CREATE TABLE Varaukset(id integer, alkupaiva date, loppupaiva date, asiakas integer, huone integer, primary key (id), foreign key (asiakas) references Asiakkaat(id), foreign key(huone) references Huoneet(id)); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:227)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:88)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:122)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:75)
+	at varausjarjestelma.VarausjarjestelmaSovellus.run(VarausjarjestelmaSovellus.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:813)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:20)
